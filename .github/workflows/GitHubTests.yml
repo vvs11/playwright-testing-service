@@ -46,7 +46,7 @@ jobs:
           const issue_number = context.issue.number;
           const owner = context.repo.owner;
           const repo = context.repo.repo;
-          const body = 'See test results [here](${{env.GENERATED_URL}})';
+          const body = 'See test results [here](process.env.GENERATED_URL)';
           github.rest.issues.createComment({
             owner,
             repo,
