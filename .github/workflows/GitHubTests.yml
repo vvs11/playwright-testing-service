@@ -16,9 +16,9 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 20
-    # - name: Install dependencies
-    #   working-directory: samples/get-started
-    #   run: npm ci
+    - name: Install dependencies
+      working-directory: samples/get-started
+      run: npm ci
     # - name: Run Playwright tests
     #   working-directory: samples/get-started
     #   env:
@@ -33,6 +33,7 @@ jobs:
     #     path: samples/get-started/playwright-report/
     #     retention-days: 10
     - name: Run custom script
+      if: always()
       run: | 
         chmod +x run_playwright_tests.sh  
         ./run_playwright_tests.sh
