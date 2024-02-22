@@ -54,6 +54,7 @@ jobs:
     #         body
     #       });
     - name: Generate list using Markdown
+      if: always()
       run: |
          echo "This is the lead in sentence for the list for test summary 1" >> $GITHUB_STEP_SUMMARY
          echo "" >> $GITHUB_STEP_SUMMARY # this is a blank line
@@ -106,6 +107,7 @@ jobs:
     #         body
     #       });
     - name: Generate list using Markdown
+      if: always()
       run: |
          echo "This is the lead in sentence for the list for test summary 2" >> $GITHUB_STEP_SUMMARY
          echo "" >> $GITHUB_STEP_SUMMARY # this is a blank line
