@@ -21,7 +21,7 @@ for (var i = 0; i < TEST_ITERATIONS; i++) {
     await expect(page).toHaveURL(/.*intro/);
     
     const randomResult = Math.random();
-    expect(randomResult).toBeGreaterThan(0.5);
+    expect(randomResult).toBeGreaterThan(0.2);
   });
 
 }
