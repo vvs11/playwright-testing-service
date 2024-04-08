@@ -21,11 +21,11 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 20
-    - name: set up reporting
-      working-directory: samples/get-started
-      run: |
-        npm set //npm.pkg.github.com/:_authToken ${{secrets.PAT_TOKEN_PACKAGE}}
-        npm install
+    # - name: set up reporting
+    #   working-directory: samples/get-started
+    #   run: |
+    #     npm set //npm.pkg.github.com/:_authToken ${{secrets.PAT_TOKEN_PACKAGE}}
+    #     npm install
         
     - name: Install dependencies
       working-directory: samples/get-started
