@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "playwright": "^1.41.1",
-    "@microsoft/mpt-reporter": "0.1.1-alpha-8557451941-1.0"
+    "@microsoft/mpt-reporter": "0.1.1-alpha-8588332351-1.0"
   }
 }
