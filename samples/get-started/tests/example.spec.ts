@@ -7,11 +7,11 @@ const TEST_ITERATIONS = parseInt(process.env.TEST_ITERATIONS || "100");
 for (var i = 0; i < TEST_ITERATIONS; i++) {
   var tagid= i % 3;
   test('has title ' + i+ tags[tagid], async ({ page }) => {
-    const skip= Math.random();
-    if (skip > 0.9)
-     {
-       test.skip();
-     }
+    // const skip= Math.random();
+    // if (skip > 0.9)
+    //  {
+    //    test.skip();
+    //  }
     await page.goto('https://playwright.dev/');
 
     // Expect a title "to contain" a substring.
