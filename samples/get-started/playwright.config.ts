@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test';
 import { CurrentsConfig, currentsReporter } from "@currents/playwright";
 
 const currentsConfig: CurrentsConfig = {
-  ciBuildId: "Currents-build-id-" + new Date().toISOString(), // 📖 https://currents.dev/readme/guides/ci-build-id
+  // ciBuildId: "Currents-build-id-" + new Date().toISOString(), // 📖 https://currents.dev/readme/guides/ci-build-id
   recordKey: "at8wVLNeQZgqyPI3", // 📖 https://currents.dev/readme/guides/record-key
   projectId: "g1Iwpe", // get one at https://app.currents.dev
 };
