@@ -3,9 +3,9 @@
 name: Get Started sample - currents
 on:
   push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
+    branches: [ main, master, vvs11-currents ]
+  # pull_request:
+  #   branches: [ main, master ]
   workflow_dispatch:
 jobs:
   test:
