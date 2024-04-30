@@ -38,7 +38,7 @@ jobs:
         # PLAYWRIGHT_SERVICE_ACCESS_TOKEN: ${{secrets.PLAYWRIGHT_SERVICE_ACCESS_TOKEN_REPORTING}}
         # PLAYWRIGHT_SERVICE_URL: ${{ secrets.PLAYWRIGHT_SERVICE_URL_REPORTING}}
         # PLAYWRIGHT_SERVICE_RUN_ID: ${{ github.run_id }}-${{ github.run_attempt }}-${{ github.sha }}
-        ci-build-id: ${{ github.run_id }}-${{ github.run_attempt }}-${{ github.sha }}
+        CURRENTS_CI_BUILD_ID: ${{ github.run_id }}-${{ github.run_attempt }}-${{ github.sha }}
       run: npx playwright test
       # run: npx playwright test --config=playwright.service.config.ts --shard=${{ matrix.shardIndex }}/${{ matrix.shardTotal }} --workers=12
     - uses: actions/upload-artifact@v3
