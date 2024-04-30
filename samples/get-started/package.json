@@ -3,18 +3,17 @@
   "description": "Playwright Service get started sample",
   "version": "1.0.0",
   "scripts": {
-    "test": "npx playwright test -c playwright.service.config.ts --workers=20",
-    "test-local": "npx playwright test"
+    "test": "npx playwright test"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.41.1",
+    "@currents/playwright": "^0.9.0",
     "dotenv": "^16.0.3"
   },
   "dependencies": {
-    "playwright": "^1.41.1",
-    "@microsoft/mpt-reporter": "0.1.1-alpha-8606712291-1.0"
+    "playwright": "^1.41.1"
   }
 }
