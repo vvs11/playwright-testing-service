@@ -1,6 +1,6 @@
 # TODO: Place this file in the .github/workflows folder of your repository
 # This sample assumes the working directory is ./samples/get-started
-name: Get Started sample
+name: Get Started sample - currents
 on:
   push:
     branches: [ main, master ]
