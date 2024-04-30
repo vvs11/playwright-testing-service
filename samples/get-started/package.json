@@ -3,8 +3,7 @@
   "description": "Playwright Service get started sample",
   "version": "1.0.0",
   "scripts": {
-    "test": "npx playwright test -c playwright.service.config.ts --workers=20",
-    "test-local": "npx playwright test"
+    "test": "npx playwright test"
   },
   "keywords": [],
   "author": "",
