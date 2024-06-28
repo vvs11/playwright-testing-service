@@ -75,8 +75,8 @@ jobs:
         run: echo "GITHUB_SHA=$GITHUB_SHA"
       - name: Print GITHUB_STEP_SUMMARY variable
         run: 
-            echo "GITHUB_STEP_SUMMARY=$GITHUB_STEP_SUMMARY"
-            echo "::set-output name=summary::# Test Run Summary%n%n## Overview%n- **Date:** 2024-06-26%n- **Total Tests:** 100%n- **Duration:** 15 minutes%n%n## Results%n- ![pass](https://img.shields.io/badge/status-passed-brightgreen) **Passed:** 95%n- ![fail](https://img.shields.io/badge/status-failed-red) **Failed:** 5%n- ![skipped](https://img.shields.io/badge/status-skipped-lightgrey) **Skipped:** 3%n- ![flaky](https://img.shields.io/badge/status-flaky-yellow) **Flaky:** 2%n%n## Dashboard%nFor more details, visit the [dashboard](http://example.com/dashboard)." >> $GITHUB_STEP_SUMMARY
+            # echo "GITHUB_STEP_SUMMARY=$GITHUB_STEP_SUMMARY"
+            echo "# Test Run Summary%n%n## Overview%n- **Date:** 2024-06-26%n- **Total Tests:** 100%n- **Duration:** 15 minutes%n%n## Results%n- ![pass](https://img.shields.io/badge/status-passed-brightgreen) **Passed:** 95%n- ![fail](https://img.shields.io/badge/status-failed-red) **Failed:** 5%n- ![skipped](https://img.shields.io/badge/status-skipped-lightgrey) **Skipped:** 3%n- ![flaky](https://img.shields.io/badge/status-flaky-yellow) **Flaky:** 2%n%n## Dashboard%nFor more details, visit the [dashboard](http://example.com/dashboard)." >> $GITHUB_STEP_SUMMARY
       - name: Print GITHUB_TRIGGERING_ACTOR variable
         run: echo "GITHUB_TRIGGERING_ACTOR=$GITHUB_TRIGGERING_ACTOR"
       - name: Print GITHUB_WORKFLOW variable
