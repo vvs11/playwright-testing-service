@@ -74,20 +74,19 @@ jobs:
       - name: Print GITHUB_SHA variable
         run: echo "GITHUB_SHA=$GITHUB_SHA"
       - name: Print GITHUB_STEP_SUMMARY variable
-        run: 
-            # echo "GITHUB_STEP_SUMMARY=$GITHUB_STEP_SUMMARY"
-            echo "#### Test Run Summary
+        run: |
+          echo "#### Test Run Summary
 
-                 #### Results:
-                 ![pass](https://img.shields.io/badge/status-passed-brightgreen) **Passed:** 95
-       
-                 ![fail](https://img.shields.io/badge/status-failed-red) **Failed:** 
-       
-                 ![flaky](https://img.shields.io/badge/status-flaky-yellow) **Flaky:** 
-       
-                 ![skipped](https://img.shields.io/badge/status-skipped-lightgrey) **Skipped:** 
-       
-                 #### For more details, visit the [dashboard](http://example.com/dashboard)." >> $GITHUB_STEP_SUMMARY
+          #### Results:
+          ![pass](https://img.shields.io/badge/status-passed-brightgreen) **Passed:** 95
+
+          ![fail](https://img.shields.io/badge/status-failed-red) **Failed:**
+
+          ![flaky](https://img.shields.io/badge/status-flaky-yellow) **Flaky:**
+
+          ![skipped](https://img.shields.io/badge/status-skipped-lightgrey) **Skipped:**
+
+          #### For more details, visit the [dashboard](http://example.com/dashboard)." >> $GITHUB_STEP_SUMMARY
       - name: Print GITHUB_TRIGGERING_ACTOR variable
         run: echo "GITHUB_TRIGGERING_ACTOR=$GITHUB_TRIGGERING_ACTOR"
       - name: Print GITHUB_WORKFLOW variable
